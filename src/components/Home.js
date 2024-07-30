@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Section from "./Section";
+import accessories from "assets/images/accessories.jpg";
+import model_3 from "assets/images/model-3.jpg";
+import model_s from "assets/images/model-s.jpg";
+import model_x from "assets/images/model-x.jpg";
+import model_y from "assets/images/model-y.jpg";
+import solar_panel from "assets/images/solar-panel.jpg";
+import solar_roof from "assets/images/solar-roof.jpg";
 
 function Home() {
   return (
@@ -8,49 +15,49 @@ function Home() {
       <Section
         title="Model S"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-s.jpg"
+        backgroundImg={model_s}
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
       <Section
         title="Model Y"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-y.jpg"
+        backgroundImg={model_y}
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
       <Section
         title="Model 3"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-3.jpg"
+        backgroundImg={model_3}
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
       <Section
         title="Model X"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-x.jpg"
+        backgroundImg={model_x}
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
       <Section
         title="Lowest Cost Solar Panels in America"
-        description="Money-back gaurentee"
-        backgroundImg="solar-panel.jpg"
+        description="Money-back"
+        backgroundImg={solar_panel}
         leftBtnText="Order now"
         rightBtnText="Learn more"
       />
       <Section
         title="Solar Roof"
         description="Produce Clean Energy From Your Roof"
-        backgroundImg="solar-roof.jpg"
+        backgroundImg={solar_roof}
         leftBtnText="Order now"
         rightBtnText="Learn more"
       />
       <Section
         title="Accessories"
         description=""
-        backgroundImg="accessories.jpg"
+        backgroundImg={accessories}
         leftBtnText="Shop now"
       />
     </Container>
