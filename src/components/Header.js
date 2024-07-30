@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { selectCars } from "../features/car/carSlice";
+import { selectCars } from "features/car/carSlice";
 import { useSelector } from "react-redux";
 
 function Header() {
@@ -33,17 +33,34 @@ function Header() {
         </CloseWrapper>
         {cars &&
           cars.map((car, index) => (
-            <li key={index}><a  href="#">{car}</a></li>
+            <li key={index}>
+              <a href="#">{car}</a>
+            </li>
           ))}
-        <li><a href="">Existing Inventory</a></li>
-        <li><a href="">Used Inventory</a></li>
-        <li><a href="">Trade-In</a></li>
-        <li><a href="">Test Drive</a></li>
-        <li><a href="">Insurance</a></li>
-        <li><a href="">Cybertruck</a></li>
-        <li><a href="">Roadster</a></li>
-        <li><a href="">Charging</a></li>
-       
+        <li>
+          <a href="">Existing Inventory</a>
+        </li>
+        <li>
+          <a href="">Used Inventory</a>
+        </li>
+        <li>
+          <a href="">Trade-In</a>
+        </li>
+        <li>
+          <a href="">Test Drive</a>
+        </li>
+        <li>
+          <a href="">Insurance</a>
+        </li>
+        <li>
+          <a href="">Cybertruck</a>
+        </li>
+        <li>
+          <a href="">Roadster</a>
+        </li>
+        <li>
+          <a href="">Charging</a>
+        </li>
       </BurgerNav>
     </Container>
   );
